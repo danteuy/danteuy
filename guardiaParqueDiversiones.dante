@@ -1,0 +1,27 @@
+APLICACION parqueDiversiones.dante
+
+CREAR cajaNombre
+CREAR cajaEdad
+CREAR cajaAltura
+
+MOSTRAR "Hola! Bienvenido al parque de diversiones"
+MOSTRAR "Cual es tu nombre?"
+PEDIR cajaNombre
+
+MOSTRAR "Cuantos años tienes?"
+PEDIR cajaEdad
+
+MOSTRAR "Cuanto mides en centimetros?"
+PEDIR cajaAltura
+
+PREGUNTA cajaEdad >= 10 Y cajaAltura >= 120
+INICIO
+  MOSTRAR "Puedes pasar a la atraccion!"
+  MOSTRAR "Disfruta el juego"
+FIN
+SINO
+INICIO
+  MOSTRAR "Lo siento,"
+  MOSTRAR cajaNombre
+  MOSTRAR "no cumples los requisitos para subir"
+FIN

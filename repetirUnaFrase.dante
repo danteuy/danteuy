@@ -1,0 +1,11 @@
+APLICACION repetirFrase.dante
+
+CREAR cajaVeces
+
+MOSTRAR "Cuantas veces quieres que repita la frase?"
+PEDIR cajaVeces
+
+REPETIR cajaVeces
+INICIO
+  MOSTRAR "Programar es divertido"
+FIN

@@ -1,0 +1,16 @@
+APLICACION calculadoraSuma.dante
+
+CREAR cajaNumeroUno
+CREAR cajaNumeroDos
+CREAR cajaResultado
+
+MOSTRAR "Ingresa el primer numero:"
+PEDIR cajaNumeroUno
+
+MOSTRAR "Ingresa el segundo numero:"
+PEDIR cajaNumeroDos
+
+EDITAR cajaResultado = cajaNumeroUno + cajaNumeroDos
+
+MOSTRAR "El resultado de la suma es:"
+MOSTRAR cajaResultado

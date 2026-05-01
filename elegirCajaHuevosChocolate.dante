@@ -1,0 +1,30 @@
+APLICACION huevosChocolate.dante
+
+CREAR cajaEleccion
+
+MOSTRAR "Hay 3 huevos de chocolate"
+MOSTRAR "Elige una caja del 1 al 3"
+PEDIR cajaEleccion
+
+OPCIONES cajaEleccion
+INICIO
+
+  OPCION 1:
+  INICIO
+    MOSTRAR "Abriste el huevo 1"
+    MOSTRAR "Tiene un autito"
+  FIN
+
+  OPCION 2:
+  INICIO
+    MOSTRAR "Abriste el huevo 2"
+    MOSTRAR "Tiene un dinosaurio"
+  FIN
+
+  OPCION 3:
+  INICIO
+    MOSTRAR "Abriste el huevo 3"
+    MOSTRAR "Tiene un avion"
+  FIN
+
+FIN
