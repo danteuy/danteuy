@@ -3,6 +3,8 @@
 This is an experimental programming language which aims to teach kids between 8 and 11 years old. 
 The whole syntax is written in spanish, and so will be the docs from this point.
 
+<img width="1006" height="641" alt="image" src="https://github.com/user-attachments/assets/44438b97-427b-473b-9b1c-0b183864f342" />
+
 Desarrollo de Aplicaciones para Niños en Trayecto Escolar.
 Introducción:
 D.A.N.T.E. es un software de aprendizaje para niños en edad escolar, cuya meta es enseñar las bases de la programación utilizando código. Nace de una necesidad particular, en el mundo actual de la programación existen varios tipos de lenguajes que permiten a los niños aprender a programar con bloques, sin embargo el salto de nivel desde la programación con bloques hacia el código puede volverse muy duro, ya que se deben aprender una gran cantidad de conceptos nuevos y complejos que no son aptos para edades demasiado tempranas. D.A.N.T.E. pretende ser un paso intermedio entre el lenguaje de bloques y el código estándar, utilizando código escrito pero en un nivel más básico, con palabras y frases en español y sin tanto requerimiento de simbología (comillas, punto y coma, parentesis, etc). Es un paso previo a salto a un lenguaje más complejo para la niñez temprana como lo sería un Python.
@@ -14,7 +16,7 @@ Tipos de datos:
 Los únicos tipos de datos serán: texto y entero.
 
 IDE:
-Cajas en el costado que muestren los contenidos de las variables.
+Cajas en el costado que muestren los contenidos de las variables en la linea del cursor.
 Mayusculización de palabras reservadas.
 Minusculización de palabras no reservadas.
 Resaltador de colores, palabras reservadas en azul, no reservadas en rojo.
@@ -35,5 +37,4 @@ FIN - cierra un bloque de código
 Y - operador AND
 O - operador OR
 
-
-Para abrir la aplicación: Descarga todos los archivos, ponlos en la misma carpeta y ejecuta dante_ide.py.
+<b>Para abrir la aplicación: Descarga todos los archivos, ponlos en la misma carpeta y ejecuta dante_ide.py.</b>
