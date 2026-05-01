@@ -34,3 +34,6 @@ INICIO - abre un bloque de código
 FIN - cierra un bloque de código
 Y - operador AND
 O - operador OR
+
+
+Para abrir la aplicación: Descarga todos los archivos, ponlos en la misma carpeta y ejecuta dante_ide.py.
