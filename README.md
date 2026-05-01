@@ -3,3 +3,128 @@
 This is an experimental programming language which aims to teach kids between 8 and 11 years old. 
 The whole syntax is written in spanish, and so will be the docs from this point.
 
+Desarrollo de Aplicaciones para Niños en Trayecto Escolar 
+Introducción:
+D.A.N.T.E. es un software de aprendizaje para niños en edad escolar, cuya meta es enseñar las bases de la programación utilizando código. Nace de una necesidad particular, en el mundo actual de la programación existen varios tipos de lenguajes que permiten a los niños aprender a programar con bloques, sin embargo el salto de nivel desde la programación con bloques hacia el código puede volverse muy duro, ya que se deben aprender una gran cantidad de conceptos nuevos y complejos que no son aptos para edades demasiado tempranas. D.A.N.T.E. pretende ser un paso intermedio entre el lenguaje de bloques y el código estándar, utilizando código escrito pero en un nivel más básico, con palabras y frases en español y sin tanto requerimiento de simbología (comillas, punto y coma, parentesis, etc). Es un paso previo a salto a un lenguaje más complejo para la niñez temprana como lo sería un Python.
+
+Concepto:
+D.A.N.T.E. está hecho en base a tecnología Python, consta de un IDE especial que permite al niño codificar mientras visualiza una barra lateral de estados que le dice en todo momento los nombres de las variables (cajas) y sus contenidos previos a tiempo de ejecución. Posee además varios elementos gráficos que ayudan al aprendizaje, tal como el highlight automático que tienen todos los IDEs, pero sumando además otros conceptos, como por ejemplo, la mayusculización automática de las palabras reservadas, y el coloreado especifico que brinde un gran contraste con lo que no es una palabra reservada, por ejemplo, combinaciones rojo/azul. La idea del lenguaje es manejar líneas independientes de código que hagan hagan una tarea pero la hagan bien, para no complejizar demasiado la legibilidad de las líneas independientes, por ejemplo, en vez de: mostrar “hola ” + nombre + “, gracias por registrarte” en una sola línea, se hará en tres líneas, una para el print del “hola”, otra para el print de la variable “nombre” y otra para el “gracias por registrarte”, esto es menos práctico pero más fácil de entender para los niños de temprana edad, porque no tendrán que aprender cómo incrustar valores de variables dentro de textos hardcodeados en los print. Además, los bloques anidados se harán con INICIO y FIN y se autoindentará.
+
+Tipos de datos:
+Los únicos tipos de datos serán: texto y entero.
+
+IDE:
+Cajas en el costado que muestren los contenidos de las variables.
+Mayusculización de palabras reservadas.
+Minusculización de palabras no reservadas.
+Resaltador de colores, palabras reservadas en azul, no reservadas en rojo.
+Autoindentado de un espacio, no necesario pero sí recomendado.
+
+Palabras Reservadas:
+CREAR - crea una variable, inicializada sin valor.
+EDITAR - modifica el valor de una variable ya creada.
+PEDIR - solicita un valor por teclado para guardar en una variable.
+MOSTRAR - muestra texto, número, o el valor de una variable en pantalla.
+PREGUNTA - estructura condicional
+SINO - estructura condicional
+REPETIR - estructura de repetición
+OPCIONES - estructura de selección
+OPCION - cada una de las selecciones de una estructura
+INICIO - abre un bloque de código
+FIN - cierra un bloque de código
+Y - operador AND
+O - operador OR
+
+Ejemplo 1 — Calculadora simple (solo suma)
+APLICACION calculadoraSuma.dante
+
+CREAR cajaNumeroUno
+CREAR cajaNumeroDos
+CREAR cajaResultado
+
+MOSTRAR "Ingresa el primer numero:"
+PEDIR cajaNumeroUno
+
+MOSTRAR "Ingresa el segundo numero:"
+PEDIR cajaNumeroDos
+
+EDITAR cajaResultado = cajaNumeroUno + cajaNumeroDos
+
+MOSTRAR "El resultado de la suma es:"
+MOSTRAR cajaResultado
+
+
+Ejemplo 2 — Guardia del parque de diversiones
+APLICACION parqueDiversiones.dante
+
+CREAR cajaNombre
+CREAR cajaEdad
+CREAR cajaAltura
+
+MOSTRAR "Hola! Bienvenido al parque de diversiones"
+MOSTRAR "Cual es tu nombre?"
+PEDIR cajaNombre
+
+MOSTRAR "Cuantos años tienes?"
+PEDIR cajaEdad
+
+MOSTRAR "Cuanto mides en centimetros?"
+PEDIR cajaAltura
+
+PREGUNTA cajaEdad >= 10 Y cajaAltura >= 120
+INICIO
+  MOSTRAR "Puedes pasar a la atraccion!"
+  MOSTRAR "Disfruta el juego"
+FIN
+SINO
+INICIO
+  MOSTRAR "Lo siento,"
+  MOSTRAR cajaNombre
+  MOSTRAR "no cumples los requisitos para subir"
+FIN
+
+Ejemplo 3 — Repetir una frase X veces (elegidas por el usuario)
+APLICACION repetirFrase.dante
+
+CREAR cajaVeces
+
+MOSTRAR "Cuantas veces quieres que repita la frase?"
+PEDIR cajaVeces
+
+REPETIR cajaVeces
+INICIO
+  MOSTRAR "Programar es divertido"
+FIN
+
+
+Ejemplo 4 — Elegir una caja con huevos Kinder (OPCIONES)
+APLICACION huevosKinder.dante
+
+CREAR cajaEleccion
+
+MOSTRAR "Hay 3 huevos Kinder"
+MOSTRAR "Elige una caja del 1 al 3"
+PEDIR cajaEleccion
+
+OPCIONES cajaEleccion
+INICIO
+
+  OPCION 1:
+  INICIO
+    MOSTRAR "Abriste el huevo 1"
+    MOSTRAR "Tiene un autito"
+  FIN
+
+  OPCION 2:
+  INICIO
+    MOSTRAR "Abriste el huevo 2"
+    MOSTRAR "Tiene un dinosaurio"
+  FIN
+
+  OPCION 3:
+  INICIO
+    MOSTRAR "Abriste el huevo 3"
+    MOSTRAR "Tiene un avion"
+  FIN
+
+FIN
