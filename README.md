@@ -2,7 +2,7 @@
 
 This is an experimental programming language which aims to teach kids between 8 and 11 years old. 
 The whole syntax is written in spanish, and so will be the docs from this point.
-<br>
+<br><br>
 <img width="1000" height="630" alt="image" src="https://github.com/user-attachments/assets/23238181-92c1-4f74-9028-9f115cb8065c" />
 <b>D.A.N.T.E. v0.1</b><br>
 <b>Desarrollo de Aplicaciones para Niños en Trayecto Escolar.</b><br>
